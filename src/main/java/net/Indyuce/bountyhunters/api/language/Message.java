@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public enum Message {
-
 	/*
 	 * bounty creation, auto-bounties and bounty updates
 	 */
@@ -55,6 +54,7 @@ public enum Message {
 	PLAYER_MUST_BE_CONNECTED("&cThe player must be connected in order to be tracked."),
 	BOUNTY_INDICATION("&eBounty on &6{player}&e is &6${reward}&e."),
 	NO_BOUNTY_INDICATION("&c{player} has no bounty."),
+	NOT_SAME_WORLD("&c{player} se encuentra en: &a{world}"),
 
 	/*
 	 * player heads

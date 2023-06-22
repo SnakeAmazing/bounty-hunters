@@ -29,7 +29,6 @@ public class PlayerMessage {
     public void send(CommandSender sender) {
         if (format.isEmpty())
             return;
-
         // Play sound
         if (initialMessage.hasSound() && sender instanceof Player)
             initialMessage.getSound().play((Player) sender);

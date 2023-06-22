@@ -86,6 +86,11 @@
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
 
+        <repository>
+            <id>dre-repo</id>
+            <url>https://erethon.de/repo</url>
+        </repository>
+
     </repositories>
 
     <dependencies>
@@ -164,8 +169,8 @@
         </dependency>
 
         <dependency>
-            <groupId>de.erethon</groupId>
-            <artifactId>DungeonsXL</artifactId>
+            <groupId>de.erethon.dungeonsxl</groupId>
+            <artifactId>dungeonsxl-api</artifactId>
             <version>0.18-PRE-02</version>
             <scope>provided</scope>
         </dependency>

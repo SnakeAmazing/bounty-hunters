@@ -32,11 +32,12 @@ public class HuntListener implements Listener {
 
 		if (!hunt.getHunted().isOnline() || !hunt.getHunted().getPlayer().getWorld().equals(player.getWorld())) {
 			player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_NO, 1, 1);
+			Message.NOT_SAME_WORLD.format("player", hunt.getHunted().getPlayer().getName(),
+					"world", hunt.getHunted().getPlayer().getWorld().getName()).send(player);
 			return;
 		}
 
 		if (!player.hasPermission("bountyhunters.compass")) {
-			Message.NOT_ENOUGH_PERMS.format().send(player);
 			return;
 		}
 
